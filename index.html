@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Make it compatible to mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Cargo Goods Orders Prediction</title>
+
+</head>
+
+<body style="background: #000;">
+ <div class="login">
+	<h1 style="color:rgb(255, 60, 0);">Cargo Goods Orders Prediction</h1>
+
+     <!-- Action is where the data is sent. In our case, predict page.
+     If action is omitted, it assumed to be the current page -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Order type A" placeholder="Order type A" required="required" /><br>
+        <input type="text" name="Order type B" placeholder="Order type B" reuqired="required" /><br>
+                <input type="text" name="Order type C" placeholder="Order type C" required="required" /><br>
+                <input type="text" name="Banking orders (1)" placeholder="Banking orders (1)" required="required" /><br>
+                <input type="text" name="Banking orders (2)" placeholder="Banking orders (2)" required="required" /><br>
+                <input type="text" name="Banking orders (3)	" placeholder="Banking orders (3)	" required="required" /><br>
+                <input type="text" name="Target (Total orders)" placeholder="Target (Total orders)" required="required" /><br>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large"> Cargo Goods Orders Performance for  overall final Prediction </button></p>
+              </form>
+          
+             <br>
+             <br>
+             <h4 style="color:Violet;">
+             </h4>
+          
+           </div>
+          
+          
+          </body>
+          </html>
